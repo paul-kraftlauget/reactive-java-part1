@@ -15,6 +15,7 @@ public class Example4 {
 
     public static void main(String ... args) {
         new Example4.Functional().runExample();
+        System.out.println();
         new Example4.ReactorBlocking().runExample();
     }
 
@@ -23,12 +24,12 @@ public class Example4 {
 
         void runExample() {
             System.out.println("Functional programming (copied from example 2 and 3):");
-            System.out.println(parse("10")); // 10
-            System.out.println(parse("   1 ")); // 1
-            System.out.println(parse(null)); // null
-            System.out.println(parse("abc")); // null
-            System.out.println(findPositiveNumbers(List.of("10", "-1", "  100 ", "abc"))); // [10, 100]
-            System.out.println(findPositiveNumbers(Collections.emptyList())); // []
+            System.out.println("parse(\"10\"): " + parse("10")); // 10
+            System.out.println("parse(\"   1 \"): " + parse("   1 ")); // 1
+            System.out.println("parse(null): " + parse(null)); // null
+            System.out.println("parse(\"abc\"): " + parse("abc")); // null
+            System.out.println("findPositiveNumbers(List.of(\"10\", \"-1\", \"  100 \", \"abc\")): " + findPositiveNumbers(List.of("10", "-1", "  100 ", "abc"))); // [10, 100]
+            System.out.println("findPositiveNumbers(Collections.emptyList()): " + findPositiveNumbers(Collections.emptyList())); // []
         }
 
         public Integer parse(String integerAsString) {
@@ -52,12 +53,12 @@ public class Example4 {
 
         void runExample() {
             System.out.println("Reactive programming with Reactor:");
-            System.out.println(parse("10")); // 10
-            System.out.println(parse("   1 ")); // 1
-            System.out.println(parse(null)); // null
-            System.out.println(parse("abc")); // null
-            System.out.println(findPositiveNumbers(List.of("10", "-1", "  100 ", "abc"))); // [10, 100]
-            System.out.println(findPositiveNumbers(Collections.emptyList())); // []
+            System.out.println("parse(\"10\"): " + parse("10")); // 10
+            System.out.println("parse(\"   1 \"): " + parse("   1 ")); // 1
+            System.out.println("parse(null): " + parse(null)); // null
+            System.out.println("parse(\"abc\"): " + parse("abc")); // null
+            System.out.println("findPositiveNumbers(List.of(\"10\", \"-1\", \"  100 \", \"abc\")): " + findPositiveNumbers(List.of("10", "-1", "  100 ", "abc"))); // [10, 100]
+            System.out.println("findPositiveNumbers(Collections.emptyList()): " + findPositiveNumbers(Collections.emptyList())); // []
         }
 
         public Integer parse(String integerAsString) {

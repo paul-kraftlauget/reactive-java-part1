@@ -16,6 +16,7 @@ public class Example3 {
 
     public static void main(String ... args) {
         new Example3.NonFunctional().runExample();
+        System.out.println();
         new Example3.FunctionalWithStream().runExample();
     }
 
@@ -49,8 +50,8 @@ public class Example3 {
 
         void runExample() {
             System.out.println("Functional programming with stream:");
-            System.out.println(findPositiveNumbers(List.of("10", "-1", "  100 ", "abc"))); // [10, 100]
-            System.out.println(findPositiveNumbers(Collections.emptyList())); // []
+            System.out.println("findPositiveNumbers(List.of(\"10\", \"-1\", \"  100 \", \"abc\")): " + findPositiveNumbers(List.of("10", "-1", "  100 ", "abc"))); // [10, 100]
+            System.out.println("findPositiveNumbers(Collections.emptyList()): " + findPositiveNumbers(Collections.emptyList())); // []
         }
 
         public List<Integer> findPositiveNumbers(List<String> list) {

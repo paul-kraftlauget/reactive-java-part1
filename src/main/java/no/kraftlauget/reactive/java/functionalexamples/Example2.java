@@ -13,6 +13,7 @@ public class Example2 {
 
     public static void main(String ... args) {
         new NonFunctional().runExample();
+        System.out.println();
         new FunctionalWithOptional().runExample();
     }
 
@@ -20,10 +21,10 @@ public class Example2 {
 
         void runExample() {
             System.out.println("Non-functional programming:");
-            System.out.println(parse("10")); // 10
-            System.out.println(parse("   1 ")); // 1
-            System.out.println(parse(null)); // null
-            System.out.println(parse("abc")); // null
+            System.out.println("parse(\"10\"): " + parse("10")); // 10
+            System.out.println("parse(\"   1 \"): " + parse("   1 ")); // 1
+            System.out.println("parse(null): " + parse(null)); // null
+            System.out.println("parse(\"abc\"): " + parse("abc")); // null
         }
 
         public Integer parse(String integerAsString) {
@@ -43,10 +44,10 @@ public class Example2 {
 
         void runExample() {
             System.out.println("Functional programming with Optional:");
-            System.out.println(parse("10")); // 10
-            System.out.println(parse("   1 ")); // 1
-            System.out.println(parse(null)); // null
-            System.out.println(parse("abc")); // null
+            System.out.println("parse(\"10\"): " + parse("10")); // 10
+            System.out.println("parse(\"   1 \"): " + parse("   1 ")); // 1
+            System.out.println("parse(null): " + parse(null)); // null
+            System.out.println("parse(\"abc\"): " + parse("abc")); // null
         }
 
         public Integer parse(String integerAsString) {

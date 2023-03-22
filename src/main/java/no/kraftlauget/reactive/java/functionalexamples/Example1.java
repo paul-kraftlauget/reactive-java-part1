@@ -12,7 +12,9 @@ public class Example1 {
 
     public static void main(String ... args) {
         concreteClassExecution();
+        System.out.println();
         functionalInterfaceExecution();
+        System.out.println();
         functionalInterfaceExecutionCompact();
     }
 

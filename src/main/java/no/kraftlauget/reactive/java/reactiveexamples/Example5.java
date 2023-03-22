@@ -16,6 +16,7 @@ public class Example5 {
 
     public static void main(String ... args) {
         new Example5.FunctionalWithReturn().runExample();
+        System.out.println();
         new Example5.ReactorNonblocking().runExample();
     }
 

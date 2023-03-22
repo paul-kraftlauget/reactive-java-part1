@@ -13,7 +13,9 @@ public class Example9 {
     public static void main(String ... args) {
         ReactorDebugAgent.init();
         new UsingMap().runExample();
+        System.out.println();
         new UsingMapInsteadOfFlatMap().runExample();
+        System.out.println();
         new UsingFlatMap().runExample();
     }
 
